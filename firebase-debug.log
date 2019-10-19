@@ -1,0 +1,421 @@
+[debug] [2019-10-19T04:29:07.515Z] ----------------------------------------------------------------------
+[debug] [2019-10-19T04:29:07.519Z] Command:       /usr/local/Cellar/node@10/10.16.3/bin/node /usr/local/bin/firebase deploy --only hosting --debug
+[debug] [2019-10-19T04:29:07.520Z] CLI Version:   7.3.0
+[debug] [2019-10-19T04:29:07.520Z] Platform:      darwin
+[debug] [2019-10-19T04:29:07.520Z] Node Version:  v10.16.3
+[debug] [2019-10-19T04:29:07.522Z] Time:          Sat Oct 19 2019 01:29:07 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-10-19T04:29:07.522Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-19T04:29:07.536Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-19T04:29:07.537Z] > authorizing via signed-in user
+[debug] [2019-10-19T04:29:07.538Z] [iam] checking project nasa-space-challenge for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-19T04:29:07.541Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nasa-space-challenge:testIamPermissions  
+
+[debug] [2019-10-19T04:29:08.035Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:08.038Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/nasa-space-challenge  
+ 
+[debug] [2019-10-19T04:29:09.638Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'nasa-space-challenge'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-10-19T04:29:09.646Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions  
+
+[debug] [2019-10-19T04:29:09.647Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions  
+
+[debug] [2019-10-19T04:29:11.480Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:11.482Z] <<< HTTP RESPONSE 200
+[info] i  hosting[earthguardians]: beginning deploy...
+[info] i  hosting[earthguardians]: found 1 files in site
+[debug] [2019-10-19T04:29:11.495Z] [hosting] hash cache [c2l0ZQ] load error: lines is not defined
+[debug] [2019-10-19T04:29:11.509Z] [hosting] hash cache [c2l0ZQ] stored for 1 files
+[debug] [2019-10-19T04:29:11.510Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-19T04:29:11.510Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions/3a8d4e371d6da476:populateFiles  
+ <request body omitted>
+[debug] [2019-10-19T04:29:12.831Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:12.836Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-19T04:29:12.837Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%)
+[info] i  hosting: uploading new files [0/1] (0%)
+[debug] [2019-10-19T04:29:17.009Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[earthguardians]: file upload complete
+[debug] [2019-10-19T04:29:17.010Z] [hosting] deploy completed after 5526ms
+[info] i  hosting[app-earthguardians]: beginning deploy...
+[info] i  hosting[app-earthguardians]: found 37 files in app/www
+[debug] [2019-10-19T04:29:17.380Z] [hosting] hash cache [YXBwL3d3dw] not populated
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[debug] [2019-10-19T04:29:18.137Z] [hosting] hash cache [YXBwL3d3dw] stored for 37 files
+[debug] [2019-10-19T04:29:18.137Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-19T04:29:18.137Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions/d37dccf9a5bd08d0:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[debug] [2019-10-19T04:29:21.515Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:21.545Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-19T04:29:21.546Z] [hosting] uploads queued: 37
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [0/37] (0%)
+[info] i  hosting: uploading new files [1/37] (2%)
+[info] i  hosting: uploading new files [3/37] (8%)
+[info] i  hosting: uploading new files [7/37] (18%)
+[info] i  hosting: uploading new files [20/37] (54%)
+[info] i  hosting: uploading new files [31/37] (83%)
+[info] i  hosting: uploading new files [34/37] (91%)
+[info] i  hosting: uploading new files [35/37] (94%)
+[debug] [2019-10-19T04:29:26.230Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[app-earthguardians]: file upload complete
+[debug] [2019-10-19T04:29:26.231Z] [hosting] deploy completed after 8871ms
+[debug] [2019-10-19T04:29:26.588Z] [
+  {
+    "config": {
+      "target": "earthguardians",
+      "public": "site",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "site": "earthguardians",
+    "version": "sites/earthguardians/versions/3a8d4e371d6da476"
+  },
+  {
+    "config": {
+      "target": "app-earthguardians",
+      "public": "app/www",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "site": "app-earthguardians",
+    "version": "sites/app-earthguardians/versions/d37dccf9a5bd08d0"
+  }
+]
+[info] i  hosting[earthguardians]: finalizing version...
+[info] i  hosting[app-earthguardians]: finalizing version...
+[debug] [2019-10-19T04:29:26.590Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions/3a8d4e371d6da476?updateMask=status  
+
+[debug] [2019-10-19T04:29:26.592Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions/d37dccf9a5bd08d0?updateMask=status  
+
+[debug] [2019-10-19T04:29:27.827Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:27.828Z] [hosting] finalized version for earthguardians:
+[info] ✔  hosting[earthguardians]: version finalized
+[info] i  hosting[earthguardians]: releasing new version...
+[debug] [2019-10-19T04:29:27.830Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/releases?version_name=sites/earthguardians/versions/3a8d4e371d6da476  
+
+[debug] [2019-10-19T04:29:27.874Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:27.875Z] [hosting] finalized version for app-earthguardians:
+[info] ✔  hosting[app-earthguardians]: version finalized
+[info] i  hosting[app-earthguardians]: releasing new version...
+[debug] [2019-10-19T04:29:27.876Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/releases?version_name=sites/app-earthguardians/versions/d37dccf9a5bd08d0  
+
+[debug] [2019-10-19T04:29:29.092Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:29.093Z] [hosting] release:
+[info] ✔  hosting[earthguardians]: release complete
+[debug] [2019-10-19T04:29:29.111Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:29:29.112Z] [hosting] release:
+[info] ✔  hosting[app-earthguardians]: release complete
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/nasa-space-challenge/overview
+[info] Hosting URL: https://earthguardians.firebaseapp.com
+[info] Hosting URL: https://app-earthguardians.firebaseapp.com
+[debug] [2019-10-19T04:33:55.167Z] ----------------------------------------------------------------------
+[debug] [2019-10-19T04:33:55.172Z] Command:       /usr/local/Cellar/node@10/10.16.3/bin/node /usr/local/bin/firebase deploy --only hosting --debug
+[debug] [2019-10-19T04:33:55.173Z] CLI Version:   7.3.0
+[debug] [2019-10-19T04:33:55.173Z] Platform:      darwin
+[debug] [2019-10-19T04:33:55.173Z] Node Version:  v10.16.3
+[debug] [2019-10-19T04:33:55.177Z] Time:          Sat Oct 19 2019 01:33:55 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-10-19T04:33:55.177Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-19T04:33:55.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-19T04:33:55.198Z] > authorizing via signed-in user
+[debug] [2019-10-19T04:33:55.199Z] [iam] checking project nasa-space-challenge for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-19T04:33:55.204Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nasa-space-challenge:testIamPermissions  
+
+[debug] [2019-10-19T04:33:56.773Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:33:56.778Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/nasa-space-challenge  
+ 
+[debug] [2019-10-19T04:33:58.404Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'nasa-space-challenge'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-10-19T04:33:58.413Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions  
+
+[debug] [2019-10-19T04:33:58.414Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions  
+
+[debug] [2019-10-19T04:34:00.305Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:34:00.335Z] <<< HTTP RESPONSE 200
+[info] i  hosting[earthguardians]: beginning deploy...
+[info] i  hosting[earthguardians]: found 1 files in site
+[debug] [2019-10-19T04:34:00.364Z] [hosting] hash cache [c2l0ZQ] load error: lines is not defined
+[debug] [2019-10-19T04:34:00.400Z] [hosting] hash cache [c2l0ZQ] stored for 1 files
+[debug] [2019-10-19T04:34:00.402Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-19T04:34:00.404Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions/8c18e893fbf21ce8:populateFiles  
+ <request body omitted>
+[debug] [2019-10-19T04:34:01.755Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:34:01.760Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-19T04:34:01.761Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%)
+[info] i  hosting: uploading new files [0/1] (0%)
+[debug] [2019-10-19T04:34:05.990Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[earthguardians]: file upload complete
+[debug] [2019-10-19T04:34:06.037Z] [hosting] deploy completed after 5698ms
+[info] i  hosting[app-earthguardians]: beginning deploy...
+[info] i  hosting[app-earthguardians]: found 37 files in app/www
+[debug] [2019-10-19T04:34:06.416Z] [hosting] hash cache [YXBwL3d3dw] load error: lines is not defined
+[info] i  hosting: hashing files [23/37] (62%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [36/37] (97%)
+[debug] [2019-10-19T04:34:07.801Z] [hosting] hash cache [YXBwL3d3dw] stored for 37 files
+[debug] [2019-10-19T04:34:07.801Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-19T04:34:07.801Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions/6d7c80081d511ca9:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[debug] [2019-10-19T04:34:10.280Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:34:10.281Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-19T04:34:10.282Z] [hosting] uploads queued: 0
+[debug] [2019-10-19T04:34:10.282Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[app-earthguardians]: file upload complete
+[debug] [2019-10-19T04:34:10.283Z] [hosting] deploy completed after 3902ms
+[debug] [2019-10-19T04:34:10.470Z] [
+  {
+    "config": {
+      "target": "earthguardians",
+      "public": "site",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "site": "earthguardians",
+    "version": "sites/earthguardians/versions/8c18e893fbf21ce8"
+  },
+  {
+    "config": {
+      "target": "app-earthguardians",
+      "public": "app/www",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "site": "app-earthguardians",
+    "version": "sites/app-earthguardians/versions/6d7c80081d511ca9"
+  }
+]
+[info] i  hosting[earthguardians]: finalizing version...
+[info] i  hosting[app-earthguardians]: finalizing version...
+[debug] [2019-10-19T04:34:10.473Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions/8c18e893fbf21ce8?updateMask=status  
+
+[debug] [2019-10-19T04:34:10.474Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions/6d7c80081d511ca9?updateMask=status  
+
+[debug] [2019-10-19T04:34:11.100Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:34:11.101Z] [hosting] finalized version for app-earthguardians:
+[info] ✔  hosting[app-earthguardians]: version finalized
+[info] i  hosting[app-earthguardians]: releasing new version...
+[debug] [2019-10-19T04:34:11.102Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/releases?version_name=sites/app-earthguardians/versions/6d7c80081d511ca9  
+
+[debug] [2019-10-19T04:34:11.758Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:34:11.759Z] [hosting] finalized version for earthguardians:
+[info] ✔  hosting[earthguardians]: version finalized
+[info] i  hosting[earthguardians]: releasing new version...
+[debug] [2019-10-19T04:34:11.760Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/releases?version_name=sites/earthguardians/versions/8c18e893fbf21ce8  
+
+[debug] [2019-10-19T04:34:12.533Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:34:12.533Z] [hosting] release:
+[info] ✔  hosting[earthguardians]: release complete
+[debug] [2019-10-19T04:34:12.535Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:34:12.539Z] [hosting] release:
+[info] ✔  hosting[app-earthguardians]: release complete
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/nasa-space-challenge/overview
+[info] Hosting URL: https://earthguardians.firebaseapp.com
+[info] Hosting URL: https://app-earthguardians.firebaseapp.com
+[debug] [2019-10-19T04:40:39.040Z] ----------------------------------------------------------------------
+[debug] [2019-10-19T04:40:39.045Z] Command:       /usr/local/Cellar/node@10/10.16.3/bin/node /usr/local/bin/firebase deploy --only hosting --debug
+[debug] [2019-10-19T04:40:39.047Z] CLI Version:   7.3.0
+[debug] [2019-10-19T04:40:39.047Z] Platform:      darwin
+[debug] [2019-10-19T04:40:39.047Z] Node Version:  v10.16.3
+[debug] [2019-10-19T04:40:39.061Z] Time:          Sat Oct 19 2019 01:40:39 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-10-19T04:40:39.061Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-19T04:40:39.081Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-19T04:40:39.082Z] > authorizing via signed-in user
+[debug] [2019-10-19T04:40:39.082Z] [iam] checking project nasa-space-challenge for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-19T04:40:39.086Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nasa-space-challenge:testIamPermissions  
+
+[debug] [2019-10-19T04:40:40.637Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:40.642Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/nasa-space-challenge  
+ 
+[debug] [2019-10-19T04:40:42.130Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'nasa-space-challenge'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-10-19T04:40:42.138Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions  
+
+[debug] [2019-10-19T04:40:42.139Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions  
+
+[debug] [2019-10-19T04:40:44.316Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:44.318Z] <<< HTTP RESPONSE 200
+[info] i  hosting[earthguardians]: beginning deploy...
+[info] i  hosting[earthguardians]: found 1 files in site
+[debug] [2019-10-19T04:40:44.335Z] [hosting] hash cache [c2l0ZQ] load error: lines is not defined
+[debug] [2019-10-19T04:40:44.351Z] [hosting] hash cache [c2l0ZQ] stored for 1 files
+[debug] [2019-10-19T04:40:44.351Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-19T04:40:44.352Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions/788b8f2c482f2688:populateFiles  
+ <request body omitted>
+[debug] [2019-10-19T04:40:45.954Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:45.960Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-19T04:40:45.960Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%)
+[info] i  hosting: uploading new files [0/1] (0%)
+[debug] [2019-10-19T04:40:49.730Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[earthguardians]: file upload complete
+[debug] [2019-10-19T04:40:49.731Z] [hosting] deploy completed after 5412ms
+[info] i  hosting[app-earthguardians]: beginning deploy...
+[info] i  hosting[app-earthguardians]: found 37 files in app/www
+[debug] [2019-10-19T04:40:50.085Z] [hosting] hash cache [YXBwL3d3dw] load error: lines is not defined
+[info] i  hosting: hashing files [27/37] (72%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [35/37] (94%)
+[info] i  hosting: hashing files [36/37] (97%)
+[info] i  hosting: hashing files [36/37] (97%)
+[info] i  hosting: hashing files [36/37] (97%)
+[info] i  hosting: hashing files [36/37] (97%)
+[debug] [2019-10-19T04:40:52.327Z] [hosting] hash cache [YXBwL3d3dw] stored for 37 files
+[debug] [2019-10-19T04:40:52.328Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-19T04:40:52.328Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions/7b757b95aac38a64:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[info] i  hosting: adding files to version [0/37] (0%)
+[debug] [2019-10-19T04:40:54.361Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:54.361Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-19T04:40:54.362Z] [hosting] uploads queued: 0
+[debug] [2019-10-19T04:40:54.362Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[app-earthguardians]: file upload complete
+[debug] [2019-10-19T04:40:54.363Z] [hosting] deploy completed after 4336ms
+[debug] [2019-10-19T04:40:54.546Z] [
+  {
+    "config": {
+      "target": "earthguardians",
+      "public": "site",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "site": "earthguardians",
+    "version": "sites/earthguardians/versions/788b8f2c482f2688"
+  },
+  {
+    "config": {
+      "target": "app-earthguardians",
+      "public": "app/www",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "site": "app-earthguardians",
+    "version": "sites/app-earthguardians/versions/7b757b95aac38a64"
+  }
+]
+[info] i  hosting[earthguardians]: finalizing version...
+[info] i  hosting[app-earthguardians]: finalizing version...
+[debug] [2019-10-19T04:40:54.549Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/versions/788b8f2c482f2688?updateMask=status  
+
+[debug] [2019-10-19T04:40:54.551Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/versions/7b757b95aac38a64?updateMask=status  
+
+[debug] [2019-10-19T04:40:55.171Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:55.172Z] [hosting] finalized version for app-earthguardians:
+[info] ✔  hosting[app-earthguardians]: version finalized
+[info] i  hosting[app-earthguardians]: releasing new version...
+[debug] [2019-10-19T04:40:55.173Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/app-earthguardians/releases?version_name=sites/app-earthguardians/versions/7b757b95aac38a64  
+
+[debug] [2019-10-19T04:40:55.990Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:55.992Z] [hosting] finalized version for earthguardians:
+[info] ✔  hosting[earthguardians]: version finalized
+[info] i  hosting[earthguardians]: releasing new version...
+[debug] [2019-10-19T04:40:55.999Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/earthguardians/releases?version_name=sites/earthguardians/versions/788b8f2c482f2688  
+
+[debug] [2019-10-19T04:40:56.434Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:56.435Z] [hosting] release:
+[info] ✔  hosting[app-earthguardians]: release complete
+[debug] [2019-10-19T04:40:56.594Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-19T04:40:56.595Z] [hosting] release:
+[info] ✔  hosting[earthguardians]: release complete
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/nasa-space-challenge/overview
+[info] Hosting URL: https://earthguardians.firebaseapp.com
+[info] Hosting URL: https://app-earthguardians.firebaseapp.com
