@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "nasa-space-challenge"
+  },
+  "targets": {
+    "nasa-space-challenge": {
+      "hosting": {
+        "earthguardians": [
+          "earthguardians"
+        ],
+        "app-earthguardians": [
+          "app-earthguardians"
+        ]
+      }
+    }
+  }
+}
